@@ -1,0 +1,47 @@
+﻿  Ball.cpp
+E:\GameEngineRepo\EngineX\Game\GameCore\ComponentTypes.h(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  (compiling source file 'Game/Actors/Ball.cpp')
+  
+  BoxColliderPhysicsComponent.cpp
+E:\GameEngineRepo\EngineX\Game\GameCore\ComponentTypes.h(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  (compiling source file 'Game/Components/BoxColliderPhysicsComponent.cpp')
+  
+  BoxRenderComponent.cpp
+E:\GameEngineRepo\EngineX\Game\GameCore\ComponentTypes.h(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  (compiling source file 'Game/Components/BoxRenderComponent.cpp')
+  
+  Actor.cpp
+E:\GameEngineRepo\EngineX\Game\GameCore\ComponentTypes.h(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  (compiling source file 'Game/Actors/Actor.cpp')
+  
+  Component.cpp
+  RenderComponent.cpp
+  TransformComponent.cpp
+  Game.cpp
+E:\GameEngineRepo\EngineX\Game\GameCore\ComponentTypes.h(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  (compiling source file 'Game/Private/Game.cpp')
+  
+  Main.cpp
+  RenderEngine.cpp
+  PhysicsComponent.cpp
+E:\GameEngineRepo\EngineX\Game\GameCore\ComponentTypes.h(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  (compiling source file 'Game/Components/PhysicsComponent.cpp')
+  
+  PhysicsEngine.cpp
+  WorldManager.cpp
+E:\GameEngineRepo\EngineX\Game\GameCore\ComponentTypes.h(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  (compiling source file 'Game/Singletons/WorldManager.cpp')
+  
+  Keyboard.cpp
+E:\GameEngineRepo\EngineX\Game\GameCore\ComponentTypes.h(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  (compiling source file 'Game/Actors/Keyboard.cpp')
+  
+  Wall.cpp
+E:\GameEngineRepo\EngineX\Game\GameCore\ComponentTypes.h(4,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  (compiling source file 'Game/Actors/Wall.cpp')
+  
+  Generating Code...
+EngineXd.lib(Engine.obj) : warning LNK4099: PDB '' was not found with 'EngineXd.lib(Engine.obj)' or at ''; linking object as if no debug info
+EngineXd.lib(RenderPacket.obj) : warning LNK4099: PDB '' was not found with 'EngineXd.lib(RenderPacket.obj)' or at ''; linking object as if no debug info
+EngineXd.lib(System.obj) : warning LNK4099: PDB '' was not found with 'EngineXd.lib(System.obj)' or at ''; linking object as if no debug info
+  GameEngineX.vcxproj -> E:\GameEngineRepo\EngineX\Build\GameEngineXd.exe
