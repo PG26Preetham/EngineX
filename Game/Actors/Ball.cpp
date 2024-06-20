@@ -1,15 +1,18 @@
 #include "Ball.h"
 #include"Game/GameCore/ActorTypes.h"
 
+// initialzes ball with colour width height and velocity
 Ball::Ball(exColor color, float width, float height , exVector2 velocity) : Actor(),
 mColor(color), mWidth(width), mHeight(height),mVeclocity(velocity)
 {
 }
 
+// initialzes ball for begin play
 void Ball::BeginPlay()
 {
 }
 
+// initialzes the actor with the spawn position and adds the components
 void Ball::InitializeActor(const exVector2 spawnPosition)
 {
     Actor::InitializeActor(spawnPosition);
@@ -20,6 +23,7 @@ void Ball::InitializeActor(const exVector2 spawnPosition)
     mBoxCollider->ListenForCollision(collisionDelegate);
 }
 
+// sets velocity
 void Ball::SetVelocity(const exVector2 newVelocity)
 {
     if (mBoxCollider)
@@ -28,6 +32,7 @@ void Ball::SetVelocity(const exVector2 newVelocity)
     }
 }
 
+// detects collision with ball keybaord and wall
 void Ball::OnCollisionDetected(exVector2 normal, std::weak_ptr<Actor> otherActor, std::weak_ptr<PhysicsComponent> otherComponent)
 {
     if (std::dynamic_pointer_cast<Keyboard>(otherActor.lock()))

@@ -12,8 +12,8 @@ protected:
 	ComponentList mComponents;
 
 public:
+	// constructor and destructor
 	Actor();
-
 	~Actor();
 
 	// overridable functions
@@ -21,11 +21,11 @@ public:
 	virtual void EndPlay();
 	virtual void Tick(float deltaSeconds);
 
+	// initializes actor then get actor position
 	virtual void InitializeActor(const exVector2 spawnPosition);
-
 	exVector2 GetActorLocation();
 
-	// Variadic Argmuments
+	// Variadic Argmuments to add components to the actor
 	template<std::derived_from<Component> ComponentType, typename ...Args>
 	std::shared_ptr<ComponentType> AddComponentOfType(Args... arguments)
 	{
@@ -36,6 +36,7 @@ public:
 		return newComponent;
 	}
 
+	// Finds type of component
 	template<std::derived_from<Component> ComponentTypeToFind>
 	std::shared_ptr<ComponentTypeToFind>  FindComponentOfType()
 	{
